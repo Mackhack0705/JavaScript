@@ -1,0 +1,175 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+ .container {
+    height: 550vh;
+    width: 100%;
+    border: 2px solid white;
+    display: grid;
+    grid-template-rows: 3.2fr 2.1fr 2.1fr 2.1fr 2.1fr 4fr 2.1fr;
+}
+
+.box {
+    width: 100%;
+    border: 2px solid red;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,606px);
+    padding: 10px 150px;
+}
+/*
+#box1 {
+    height: 16.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+}*/
+.sub-box {
+    height: 450px;
+    /* width: 80%; */
+    border: 2px solid green;
+    /* margin: 55px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+}
+#box1 {
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 0.5fr 3fr;
+    padding: 10px 150px;
+}
+.pro1 {
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.pro2 {
+    border: 2px solid green;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 20px;
+}
+.sub {
+    height: 94%;
+    width: 300px;
+    margin: 5px;
+    border: 2px solid blue;
+}
+#sub2 {
+    padding-left: 100px; 
+    padding-top: 15px;
+}
+#box6 {
+    display: grid;
+    grid-template-rows: 3fr;
+    padding: 10px 150px;
+}
+.small-box {
+    border: 2px solid green;
+}
+#box7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,404px);
+    padding: 10px 150px;
+}
+.inner-box {
+    height: 430px;
+    border: 2px solid green;
+}
+.lap-vid {
+    height: 440px;
+    width: 400px;
+    position: relative;
+    /* top: 5px; */
+    left: 50px;
+}
+.lap-img {
+    position: absolute;
+    height: 445px;
+    width: 600px;
+}
+#lang {
+    font-size: 18px;
+    border-radius: 6px;
+    color: white;
+    margin: 5px;
+    background: transparent;
+}
+#signin {
+    background-color: red;
+    color: white;
+    border-radius: 6px;
+    font-size: 18px;
+    margin: 5px;
+    border: none;
+    width: 80px;
+    height: 26px;
+}
+/*
+.explore {
+    height: 430px;
+    width: 598px;
+    border: 2px solid blue;
+    font-size: 25px;
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    height: 15%;
+    width: 80%;
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20rem;
+}
+
+.heading {
+    height: 80%;
+    width: 80%;
+    margin: 20px;
+    border: 2px solid green;
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.images {
+    width: 595px;
+    height: 427px;
+    position: absolute;
+} */
+
+/* @media (max-width:1263px) {
+    .container {
+        height: 0vh;
+    }
+    .sub-box {
+        height: 100px;
+    }
+} */
