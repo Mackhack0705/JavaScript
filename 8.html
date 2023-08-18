@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            display: inline-block;
+            width: 360px;
+            height: 250px;
+            margin: 8px;
+        }
+        img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // setInterval(function() {
+        //     document.write('Hello');
+        // },1000)
+
+        // 1000 is 1000ms = 1s
+        
+
+        // let a = 10;
+        // let b = 30;
+
+        // console.log("add",a+b)
+        // setTimeout(function() {
+        //     console.log("minus",a-b);
+        // },2000)
+
+        // console.log("mul",a*b)
+
+        // let condition = false;
+
+        // let prom = new Promise(function(resolve,reject) {
+        //     if(condition) {
+        //         resolve("successfully");
+        //     }
+        //     else {
+        //         reject("Unsuccessfull");
+        //     }
+        // })
+
+        // prom.then((item)=>{
+        //     console.log(item);
+        // }).catch((error)=>{
+        //     console.log(error);
+        // })
+
+        //async function output() {
+        //     console.log("Hello 1");
+        //     await console.log("Hello 2");
+        //     console.log("Hello 3");
+        // }
+        // output().then((item)=>{console.log(item)}).catch((error)=>{console.log(error)})
+
+        fetch('student_data.json').then((item)=>{
+            return item.json(); 
+        }).then((data)=>{
+            // document.write(data.products);
+            for(let i of data.products) {
+                console.log(i.images);
+                let a = document.createElement("div");
+                a.setAttribute("class", "div");
+                let m = document.createElement("img");
+                m.src = i.images;
+                a.append(m);
+                let desc = document.createElement("h5");
+                desc.innerHTML = i.title;
+                a.append(desc);
+                document.body.appendChild(a);
+                console.log(a);
+            }
+        })
+    </script>
+</body>
+</html>
