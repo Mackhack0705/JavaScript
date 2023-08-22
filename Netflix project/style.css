@@ -27,24 +27,32 @@ body {
 
 #box1 {
     height: 18%;
-    display: grid;
-    grid-template-rows: 0.5fr 3fr;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
-#box1 img {
+#box1::before {
+    content: "";
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/6c884f48-f7d8-4a59-9d25-b7c138813aee/ed2b002b-c6c5-459c-9c97-753f50e8286b/IN-en-20230807-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.65;
+}
+/* #box1 img {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
+} */
 #box2 {
     height: 12.5%;
 }
 .feature {
-   display: flex;
-}
-.sub-box {
-    width: 610px;
-    height: 450px;
-    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
 }
 #box3 {
     height: 12.5%;
@@ -71,46 +79,72 @@ body {
     width: 404px;
     border: 2px solid green;
 }
-.pr {
-    position: absolute;
-    z-index: 2;
-    left: 154px;
-    width: 610px;
-    margin: 2px 0;
-}
-.pro1 {
-    top: 0;
+.pro {
+    position: relative;
     border: 2px solid green;
+}
+#pro1 {
+    height: 90px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     
 }
-.pro2 {
-    top: 120px;
-    height: 550px;
-    border: 2px solid green;
+#pro2 {
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
-    padding-top: 160px;
-    font-size: 20px;
-}
-#main-img {
-    width: 1512px;
-    height: 693px;
-    opacity: 0.4;
 }
 .sub {
-    height: 94%;
-    width: 300px;
+    height: 55%;
+    margin: auto 0;
     border: 2px solid blue;
 }
+#sub1 {
+    width: 15%;
+}
 #sub2 {
-    margin-top: 20px;
-    padding-left: 80px; 
-    padding-top: 6px;
+    width: 20%;
+    height: 40%;
+}
+#lang {
+    height: 100%;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    /* margin: 0 5px; */
+    background: transparent;
+}
+#signin {
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-left: 36px;
+    /* margin: 0 5px; */
+    border: none;
+    width: 33%;
+    height: 30px;
 }
 #main-heading {
     font-weight: 900;
     font-size: 45px;
+}
+.info {
+    margin: 0 10px;
+}
+.sub-box {
+    height: 98%;
+    width: 50%;
+    border: 2px solid green;
+}
+.des {
+    padding: 16% 0px;
+}
+.sub-box2 {
+    background: url();
 }
 .small-box {
     padding: 5px;
@@ -119,42 +153,22 @@ body {
 .vid1 {
     height: 439px;
     width: 435px;
-    position: relative;
-    left: 80px;
-    bottom: 5px;
+    /* position: relative; */
+    /* left: 80px;
+    bottom: 5px; */
 }
 .vid2 {
     height: 439px;
     width: 380px;
-    position: relative;
-    left: 100px;
-    bottom: 85px;
+    /* position: relative; */
+    /* left: 100px;
+    bottom: 85px; */
 }
 .img {
-    position: absolute;
-    z-index: 1;
+    /* position: absolute; */
+    /* z-index: 1; */
     height: 445px;
     width: 600px;
-}
-#lang {
-    box-shadow: #000;
-    height: 30px;
-    width: 90px;
-    font-size: 15px;
-    border-radius: 4px;
-    color: white;
-    margin: 5px;
-    background: transparent;
-}
-#signin {
-    background-color: red;
-    color: white;
-    border-radius: 4px;
-    font-size: 15px;
-    margin: 5px;
-    border: none;
-    width: 78px;
-    height: 30px;
 }
 .fea {
     font-size: 23px;
@@ -190,10 +204,6 @@ button {
     color: #fff;
     font-weight: 900;
     font-size: 40px;
-}
-.des {
-    padding-top: 160px;
-    padding-left: 50px;
 }
 .li-item {
     height: 100px;
